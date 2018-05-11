@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- name 自定义view的名字 TextView -->
+    <declare-styleable name="TextView">
+        <!-- name 属性名称  format 格式：string 文字、color 颜色、dimension 宽高 字体大小、integer 数字、reference 资源（drawable） -->
+        <attr name="mletheText" format="string"/>
+        <attr name="mletheTextColor" format="color"/>
+        <attr name="mletheTextSize" format="dimension"/>
+        <attr name="mletheMaxLength" format="integer"/>
+        <!-- background 自定义view都是继承自view，背景是由view管理的 -->
+        <!--<attr name="mletheBackground" format="reference|color"/>-->
+        <!-- 枚举 -->
+        <attr name="inputType">
+            <enum name="number" value="1"/>
+            <enum name="text" value="2"/>
+            <enum name="password" value="3"/>
+        </attr>
+    </declare-styleable>
+
+    <!-- QQ运动步数、加载进度条，自定义属性 -->
+    <declare-styleable name="QQStepView">
+        <!-- 外圆弧的颜色 -->
+        <attr name="outerColor" format="color"/>
+        <!-- 内圆弧的颜色 -->
+        <attr name="innerColor" format="color"/>
+        <!-- 圆弧宽度 -->
+        <attr name="borderWidth" format="dimension"/>
+        <!-- 字体大小 -->
+        <attr name="stepTextSize" format="dimension"/>
+        <!-- 字体颜色 -->
+        <attr name="stepTextColor" format="color"/>
+    </declare-styleable>
+    
+    <declare-styleable name="ShapeView">
+        <!-- 圆的颜色 -->
+        <attr name="circleColor" format="color"/>
+        <!-- 圆的半径 -->
+        <attr name="circleRadius" format="dimension"/>
+        <!-- 正方形的颜色 -->
+        <attr name="squareColor" format="color"/>
+        <!-- 正方形的边长 -->
+        <attr name="squareLength" format="dimension"/>
+        <!-- 三角形的颜色 -->
+        <attr name="triangleColor" format="color"/>
+        <!-- 三角形的边长 -->
+        <attr name="triangleLength" format="dimension"/>
+        <!-- 画的形状 -->
+        <attr name="viewType" format="enum">
+            <enum name="circle" value="100"/>
+            <enum name="square" value="101"/>
+            <enum name="triangle" value="102"/>
+        </attr>
+    </declare-styleable>
+
+    <!-- 字体变色，自定义属性 -->
+    <declare-styleable name="ColorTrackTextView">
+        <!-- 左边圆弧的颜色 -->
+        <attr name="originColor" format="color"/>
+        <!-- 右边圆弧的颜色 -->
+        <attr name="changeColor" format="color"/>
+    </declare-styleable>
+
+    <!-- 评分控件 -->
+    <declare-styleable name="RatingBar">
+        <attr name="starNormal" format="reference"/>
+        <attr name="starFocus" format="reference"/>
+        <attr name="gradeNumber" format="integer"/>
+    </declare-styleable>
+
+    <!-- 地区侧边栏 -->
+    <declare-styleable name="LetterSideBar">
+        <!-- 默认颜色 -->
+        <attr name="normalColor" format="color"/>
+        <!-- 选择的颜色 -->
+        <attr name="selectedColor" format="color"/>
+        <!-- 字体大小 -->
+        <attr name="normalTextSize" format="dimension"/>
+    </declare-styleable>
+
+    <!-- 流式标签布局 -->
+    <declare-styleable name="FlowLayout">
+        <!-- 列间距 -->
+        <attr name="columnInterval" format="dimension"/>
+        <!-- 行间距 -->
+        <attr name="rowInterval" format="dimension"/>
+    </declare-styleable>
+
+</resources>
